@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8864056e166d8c1429a1c9761bd9d44f
+guid: 89718c0eb0c781a4e88936104c0434c1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5830191005822597861
-    second: ProgressBars_0
+      213: 1867573638252781319
+    second: Rundare HungerBars_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ProgressBars_0
+      name: Rundare HungerBars_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 80
-        width: 95
-        height: 15
+        x: 12
+        y: 398
+        width: 464
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b15444d7b20071fa0800000000000000
-      internalID: -5830191005822597861
+      spriteID: 70fd0f34454fae910800000000000000
+      internalID: 1867573638252781319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProgressBars_1
+      name: Rundare HungerBars_1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 56
-        width: 95
-        height: 15
+        x: 12
+        y: 301
+        width: 464
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f9c9b9af95726d4dad2058e67c85d14
-      internalID: 2084095415
+      spriteID: 5eea6351fbd198942ae5e238e4fa8b90
+      internalID: 826115610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ProgressBars_2
+      name: Rundare HungerBars_2
       rect:
         serializedVersion: 2
-        x: 3
-        y: 32
-        width: 95
-        height: 15
+        x: 12
+        y: 204
+        width: 464
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edfa109e1c34bee43813c008fce55291
-      internalID: 314939447
+      spriteID: 467c4d88ed343e145a3983e3ce0c2ad2
+      internalID: -1469379625
       vertices: []
       indices: 
       edges: []
@@ -171,7 +171,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a19905f98d0099548a0cdf8fab9a0c23
+    spriteID: 72d4c3bff3e58124fa3d5839382aa12f
     internalID: 0
     vertices: []
     indices: 
@@ -181,11 +181,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":100.0,"y":30.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      ProgressBars_0: -5830191005822597861
-      ProgressBars_1: 2084095415
-      ProgressBars_2: 314939447
+      Rundare HungerBars_0: 1867573638252781319
+      Rundare HungerBars_1: 826115610
+      Rundare HungerBars_2: -1469379625
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
