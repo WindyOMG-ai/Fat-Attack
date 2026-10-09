@@ -1,14 +1,11 @@
-using Unity.ProjectAuditor.Editor.Core;
+using System;
 using UnityEngine;
 
 public class Mouth : MonoBehaviour
 {
     public FatTracker fatTracker;
 
-    private void Start()
-    {
-        
-    }
+    public static event Action<Food, Mouth> OnFoodEaten;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,7 +14,10 @@ public class Mouth : MonoBehaviour
         if (food == null)
             return;
 
+        OnFoodEaten?.Invoke(food, this);
+
         fatTracker.AddCalories(food.calories);
+
         Destroy(other.gameObject);
     }
 }

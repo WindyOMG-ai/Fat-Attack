@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -12,8 +13,11 @@ public class FatTracker : MonoBehaviour
     public ParticleSystem mouthPartSys;
     public ParticleSystem bellyPartSys;
 
-    // Private properties
-    private int currentCalories;
+    public int CurrentCalories { get; private set; }
+
+    public event Action<int> OnCaloriesChanged;
+    public event Action OnExploded;
+
     private Vector3 headStartScale;
     private Vector3 bellyStartScale;
 
@@ -25,17 +29,19 @@ public class FatTracker : MonoBehaviour
 
     public void AddCalories(int cals)
     {
-        currentCalories += cals;
+        CurrentCalories += cals;
+
+        OnCaloriesChanged?.Invoke(CurrentCalories);
 
         CheckScale();
 
-        if (currentCalories >= caloriesForDeath)
+        if (CurrentCalories >= caloriesForDeath)
             StartCoroutine(Explode());
     }
 
     public void CheckScale()
     {
-        float progress = Mathf.Clamp01((float)currentCalories / caloriesForDeath);
+        float progress = Mathf.Clamp01(CurrentCalories / caloriesForDeath);
 
         float scaleMultiplier = Mathf.Lerp(1f, 2f, progress);
 
@@ -45,6 +51,8 @@ public class FatTracker : MonoBehaviour
 
     private IEnumerator Explode()
     {
+        OnExploded?.Invoke();
+
         yield return new WaitForSeconds(2);
 
         mouthPartSys.GetComponent<AudioSource>().Play();
@@ -62,6 +70,7 @@ public class FatTracker : MonoBehaviour
         Destroy(belly);
 
         head.AddComponent<Rigidbody>();
+
         head.GetComponent<Rigidbody>().AddForce(new Vector3(0f, 750f, -100f));
     }
 }
